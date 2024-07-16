@@ -1,12 +1,14 @@
 import React from "react";
 import Hero from "../../components/Hero";
+import Intro from "../../components/aboutUs/Intro";
+import Achievements from "../../components/aboutUs/Achievements";
 
 const heroContent = {
   title: "ABOUT",
   subTitle:
-    "Stay updated with PrimePro's latest services, features, and offers.",
+    "PrimePro connects you to top car wash services for quick, reliable care.",
   image:
-    "https://images.pexels.com/photos/14231678/pexels-photo-14231678.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://res.cloudinary.com/dejithzc7/image/upload/v1721156651/Prime%20Pro/aboutus.png",
 };
 
 const AboutUs = () => {
@@ -14,6 +16,12 @@ const AboutUs = () => {
     <div>
       <div className="relative z-[-1]">
         <Hero content={heroContent} />
+      </div>
+      <div>
+        <Intro />
+      </div>
+      <div className="py-20">
+        <Achievements />
       </div>
     </div>
   );
