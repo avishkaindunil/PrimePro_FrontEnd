@@ -7,7 +7,7 @@ import Footer from "../../components/Footer";
 const Home = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="relative z-[-1]">
         <Hero />
       </div>
@@ -15,7 +15,7 @@ const Home = () => {
         <CardsList />
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
