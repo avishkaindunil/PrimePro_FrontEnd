@@ -17,7 +17,7 @@ const achievementsContent = [
       "PrimePro has secured US $3 million from venture capitalists, the highest among all start-ups in the country.",
   },
   {
-    imageUrl: "https://res.cloudinary.com/dejithzc7/image/upload/v1721156646/Prime%20Pro/vb5ay0eeaaeqjk0jkyrd.png",
+    imageUrl: "https://res.cloudinary.com/dejithzc7/image/upload/v1721156646/Prime%20Pro/y83mlxhdmgqepxjsyjzs.png",
     title:
       "PrimePro has secured US $3 million from venture capitalists, the highest among all start-ups in the country.",
   },
