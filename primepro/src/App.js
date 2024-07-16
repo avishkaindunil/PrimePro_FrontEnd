@@ -1,24 +1,17 @@
 import "./App.css";
-import CardsList from "./components/Cardlist";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/root/Home";
+import AboutUs from "./pages/root/AboutUs";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <div className="relative z-[-1]">
-        <Hero />
-      </div>
-      <div className="pt-10">
-        <CardsList />
-      </div>
-
-      <Footer />
-    </>
-
-
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutUs />} />
+      </Routes>
+    </Router>
   );
 }
 
