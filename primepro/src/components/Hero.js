@@ -1,20 +1,20 @@
 
 import React from "react";
 
-function Hero() {
+function Hero({heroData}) {
   return (
     <div className="w-full mt-10 h-[700px] ">
       <div className="relative h-[700px]">
-        <div className="absolute top-0 left-0 w-full h-full bg-black/40 flex flex-col justify-center items-start text-white px-10">
-          <h1 className="text-7xl font-bold mb-4 ml-60">News</h1>
+        <div className="absolute top-0 left-0 flex flex-col items-start justify-center w-full h-full px-10 text-white bg-black/40">
+          <h1 className="mb-4 font-bold text-7xl ml-60">{heroData.title}</h1>
           <p className="text-xl ml-60">
-            Stay updated with PrimePro's latest services, features, and offers.
+            {heroData.description}
           </p>
         </div>
         <img
-          src="https://images.pexels.com/photos/14231678/pexels-photo-14231678.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          src={heroData.image}
           alt="Car washing"
-          className="w-full h-full object-cover"
+          className="object-cover w-full h-full"
         />
       </div>
     </div>

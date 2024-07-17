@@ -1,24 +1,22 @@
 import "./App.css";
-import CardsList from "./components/Cardlist";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
+import MainLayout from "./components/MainLayout";
+import News from "./pages/News";
+import Services from "./pages/Services";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <div className="relative z-[-1]">
-        <Hero />
-      </div>
-      <div className="pt-10">
-        <CardsList />
-      </div>
-
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainLayout />} >
+            <Route index element={<News />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/news" element={<News />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
-
-
   );
 }
 
