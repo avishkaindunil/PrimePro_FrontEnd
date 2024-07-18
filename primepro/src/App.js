@@ -1,4 +1,5 @@
 import "./App.css";
+
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import MainLayout from "./components/MainLayout";
 import News from "./pages/News";
@@ -17,6 +18,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </>
+
   );
 }
 
