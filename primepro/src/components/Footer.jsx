@@ -16,7 +16,7 @@ const sections=[
   },
   {
     title: 'Contact',
-    items: ['+(94) 11 222 3344', <input type='email' placeholder='Email' className='bg-gray-800 text-gray-300 p-1 rounded-md' />, <button className='bg-purple-950 text-white p-1 rounded-md'>Subscribe</button>]
+    items: ['+(94) 11 222 3344', <input type='email' placeholder='Email' className='p-1 text-gray-300 bg-gray-800 rounded-md' />, <button className='p-1 text-white rounded-md bg-purple-950'>Subscribe</button>]
      
   },
 ]
@@ -46,10 +46,10 @@ const items =[
 
 function Footer() {
   return (
-    <div className='w-full mt-24 bg-purple-950 text-gray-300 py-y px-2'>
+    <div className='w-full px-2 text-gray-300 bg-purple-950 py-y'>
       <div className='max-w-[1240px] mx-auto grid grid-cols-2 md:grid-cols-5 border-b-2 border-gray-600 py-8'>
       <div className='"col-span-2 pt-8 md:pt-2 w-full pr-20'>
-        <p className='font-bold flex justify-start md:mb-5 text-3xl'>
+        <p className='flex justify-start text-3xl font-bold md:mb-5'>
             PrimePro
         </p>
          <p>
@@ -58,7 +58,7 @@ function Footer() {
          <div className='flex justify-between sm:w-[200px] pt-4 text-2xl'>
         {
           items.map((x,index)=>{
-            return <x.icon key={index} className='hover:text-white cursor-pointer' />
+            return <x.icon key={index} className='cursor-pointer hover:text-white' />
           })
         }
 
@@ -67,12 +67,12 @@ function Footer() {
         {
           sections.map((section,index)=>(
             <div className='md:pl-14' key={index}>
-              <h6 className='font-bold uppercase pt-2'>
+              <h6 className='pt-2 font-bold uppercase'>
                 {section.title}
               </h6>
               <ul>
                 {section.items.map((item,i)=>(
-                  <li key={i} className='py-1 text-gray-300 hover:text:white cursor-pointer'>
+                  <li key={i} className='py-1 text-gray-300 cursor-pointer hover:text:white'>
                     {item}
                   </li>
                 ))}
@@ -88,13 +88,13 @@ function Footer() {
         2024 all rights reserved
       </p>
       <div className='flex space-x-4'>
-          <a href='#' className='hover:text-white cursor-pointer'>
+          <a href='#' className='cursor-pointer hover:text-white'>
             FAQ
           </a>
-          <a href='#' className='hover:text-white cursor-pointer'>
+          <a href='#' className='cursor-pointer hover:text-white'>
             Privacy Policy
           </a>
-          <a href='#' className='hover:text-white cursor-pointer'>
+          <a href='#' className='cursor-pointer hover:text-white'>
             Terms & Conditions
           </a>
         </div>
